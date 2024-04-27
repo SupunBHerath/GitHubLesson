@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Step-by-Step Guide to GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .box {
+            width: 60%;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .step-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .step-title {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .step-description {
+            color: #666;
+        }
+
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="box">
+        <div class="step-box">
+            <h2 class="step-title">1. Introduction</h2>
+            <p class="step-description">GitHub is a platform that allows you to host and collaborate on Git
+                repositories. This guide will walk you through the basic steps to get started with GitHub.
+                <br><br>
+                GitHub is a web-based platform used for version control using Git, a distributed version control system.
+                It allows developers to collaborate on projects, track changes, and manage code repositories. GitHub
+                provides features such as code hosting, issue tracking, pull requests, code review, and project
+                management tools. It's widely used in the software development community for both open-source and
+                private projects.
+            </p>
+        </div>
+
+        <div class="step-box">
+            <h2 class="step-title">2. Setting Up Git</h2>
+            <p class="step-description">If you haven't already, download and install Git from <a
+                    href="https://git-scm.com/">https://git-scm.com/</a>.</p>
+        </div>
+        <div class="step-box">
+            <h2>Setting Up Git</h2>
+            <p>If you haven't already, download and install Git from <a
+                    href="https://git-scm.com/">https://git-scm.com/</a>.</p>
+            <p>Configure your Git username and email using the following commands:</p>
+            <pre><code>git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"</code></pre>
+        </div>
+        <div class="step-box">
+            <h2 class="step-title">3. Creating a Repository</h2>
+            <p class="step-description">Navigate to the directory where you want to create your project and run:</p>
+            <pre><code>git init</code></pre>
+        </div>
+
+        <div class="step-box">
+            <h2 class="step-title">4. Adding Files to the Repository</h2>
+            <p class="step-description">Add files to the staging area using:</p>
+            <pre><code>git add &lt;filename&gt;</code></pre>
+        </div>
+
+        <div class="step-box">
+            <h2 class="step-title">5. Commit Changes</h2>
+            <p class="step-description">Commit the staged files to the repository with a descriptive message using:</p>
+            <pre><code>git commit -m 'Your commit message'</code></pre>
+        </div>
+
+        <div class="step-box">
+            <h2 class="step-title">6. Connect to a Remote Repository (Optional)</h2>
+            <p class="step-description">If you want to connect to a remote repository, use:</p>
+            <pre><code>git remote add origin &lt;remote_repository_URL&gt;
+git push -u origin master</code></pre>
+        </div>
+
+        <div class="step-box">
+            <h2 class="step-title">7. Pull Changes from the Remote Repository (Optional)</h2>
+            <p class="step-description">To pull changes from the remote repository, use:</p>
+            <pre><code>git pull origin master</code></pre>
+        </div>
+
+        <div class="step-box">
+            <h2 class="step-title">8. Working with Branches</h2>
+            <p class="step-description">Create a new branch using:</p>
+            <pre><code>git checkout -b &lt;branch_name&gt;
+git checkout master
+git merge &lt;branch_name&gt;</code></pre>
+        </div>
+    </div>
 </body>
+
 </html>
